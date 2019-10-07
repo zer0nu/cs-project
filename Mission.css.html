@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page - GetHelp</title>  
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			*{
+				font-family: Oswald;
+			}
+			.titlething{
+				display: block;
+				width: 100%;
+				height: 100px;
+				top: 0px;
+				padding-top: 0px;
+				padding-left: 30px;
+				padding-bottom: 0px;
+				background-color: lightgray;
+				position: absolute;
+				background-color: lightgray;
+				margin-top: 0px;
+			}
+			body{
+				margin: 0;
+			}
+			.sidebar{
+				height: 100%;
+				width: 0;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				right: 0;
+				background-color: #54B948;
+				overflow-x: hidden;
+				transition: 0.5s;
+				padding-top: 60px;
+			}
+			.sidebar a{
+				padding: 8px 8px 8px 32px;
+				text-decoration: none;
+				font-size: 25px;
+				color: #ffffff;
+				display: block;
+				transition: 0.3s;
+			}
+			.sidebar a:hover{
+				color: #008000;
+			}
+			.sidebar .closebtn{
+				position: absolute;
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 50px;
+			}
+			.openbtn{
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				height: 100px;
+				width: 100px;
+				font-size: 60px;
+				cursor: pointer;
+				background-color: #54B948;
+				color: white;
+				border: none;
+				display: block;
+			}
+			.openbtn:hover{
+				background-color: #008000;
+				transition: 0.3s;
+			}
+			.pic{
+				display: block;
+				position: absolute;
+				top: 125px;
+				left: 50px;
+				z-index: -3;
+			}
+			.text{
+				display:block;
+				position: absolute;
+				left: 860px;
+				margin-right: 50px;
+				top: 125px;
+				z-index:-1;
+			}
+			.text2{
+				display:block;
+				position: absolute;
+				left: 50px;
+				right: 50px;
+				top: 550px;
+				z-index: -3;
+			}
+			.footer{
+				position: absolute;
+				display: block;
+				top: 800px;
+				width: 100%;
+				height: 70px;
+				background-color: #54B948;
+			}
+			.footer #andoy {
+				color: white;
+				font-size: 20px;
+			}
+
+			*{
+				box-sizing: border-box;
+			}
+			img{
+				vertical-align: middle;
+			}
+			.container{
+				width: 800px;
+				position: relative;
+				top: 150px;
+				left: 50px;
+				z-index: -3;
+			}
+			.mySlides{
+				display: none;
+			}
+			.cursor{
+				cursor: pointer;
+			}
+			.prev, .next{
+				cursor: pointer;
+				position: absolute;
+				top: 40%;
+				width: auto;
+				padding: 16px;
+				margin-top: -50px;
+				color: white;
+				font-weight: bold;
+				font-size: 20px;
+				border-radius: 0 3px 3px 0;
+				user-select: none;
+				-webkit-user-select: none;
+			}
+			.next{
+				right: 0;
+				border-radius: 3px 0 0 3px;
+			}
+			.prev:hover, .next:hover{
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+			.numbertext{
+				color: #f2f2f2;
+				font-size: 12px;
+				padding: 8px 12px;
+				position: absolute;
+				top: 0;
+			}
+			.caption-container{
+				text-align: center;
+				background-color: #222;
+				padding: 2px 16px;
+				color: white;
+			}
+			.row:after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+			.column{
+				float: left;
+				width: 20%;
+			}
+			.demo{
+				opacity: 0.6;
+			}
+			.active, .demo:hover{
+				opacity: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="titlething">
+			<h1>Get<font color="#54B948">Help</font>.com</h1>
+		</div>
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="Mission.css.html">Home Page</a>
+			<a href="Problem.css.html">Problem Statement</a>
+			<a href="Solution.css.html">Solution Statement</a>
+		</div>
+		<div id="main">
+			<button class="openbtn" onclick="openNav()">☰</button>  
+		</div> 
+		<script>
+			function openNav(){
+				document.getElementById("mySidebar").style.width = "250px";
+			}
+			function closeNav(){
+				document.getElementById("mySidebar").style.width = "0";	
+			}
+		</script>
+		<div class="container">
+			<div class="mySlides">
+				<div class="numbertext">1 / 5</div>
+				<img src="https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2017/05/15/20/19/c7_pet_depression-8col.jpg" style="width:100%; height:280px">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">2 / 5</div>
+				<img src="https://qph.fs.quoracdn.net/main-qimg-f01273ebbed23fabc4c4c3130c31383e.webp" style="width:100%; height:280px">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">3 / 5</div>
+				<img src="https://teens.drugabuse.gov/sites/default/files/styles/medium/public/blog/ADHD-Brain.jpg?itok=OwnKm6EX" style="width:100%; height:280px">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">4 / 5</div>
+				<img src="https://s3.amazonaws.com/dsg.files.app.content.prod/gereports/wp-content/uploads/2015/04/26060126/Vizamyl-spotlight.png" style="width:100%; height:280px">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">5 / 5</div>
+				<img src="https://i.redd.it/71imk2vg72c01.jpg" style="width:100%; height:280px">
+			</div>
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+			<div class="row">
+				<div class="column">
+					<img class="demo cursor" src="https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2017/05/15/20/19/c7_pet_depression-8col.jpg" style="width:100%; height: 48px" onclick="currentSlide(1)" alt="State of the Brain: Normal vs. Depressed">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="https://qph.fs.quoracdn.net/main-qimg-f01273ebbed23fabc4c4c3130c31383e.webp" style="width:100%; height: 46px" onclick="currentSlide(2)" alt="State of the Brain: Normal vs. Bipolar">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="https://teens.drugabuse.gov/sites/default/files/styles/medium/public/blog/ADHD-Brain.jpg?itok=OwnKm6EX" style="width:100%; height: 46px" onclick="currentSlide(3)" alt="State of the Brain: Normal vs. ADHD">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="https://s3.amazonaws.com/dsg.files.app.content.prod/gereports/wp-content/uploads/2015/04/26060126/Vizamyl-spotlight.png" style="width:100%; height: 46px" onclick="currentSlide(4)" alt="State of the Brain: Normal vs. w/PTSD">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="https://i.redd.it/71imk2vg72c01.jpg" style="width:100%; height:46px" onclick="currentSlide(5)" alt="State of the Brain: Normal vs. w/OCD">
+				</div>    
+			</div>
+		</div>
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			function plusSlides(n){
+				showSlides(slideIndex += n);
+			}
+			function currentSlide(n){
+				showSlides(slideIndex = n);
+			}
+			function showSlides(n){
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("demo");
+				var captionText = document.getElementById("caption");
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++){
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " active";
+				captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+		</script>
+	   <div class="text">
+			<h2>What is our mission?</h2>
+			<p>
+				GetHelp is an advocacy that aims to make use of Information and Communications Technology to provide more accessible treatment for mental health issues, especially among teens, who make use of ICT everyday.
+			</p>
+		</div>
+		<div class="text2">
+			<h3>Sources:</h3>
+			<p>https://www.hhs.gov/ash/oah/adolescent-development/mental-health/adolescent-mental-health-basics/common-disorders/index.html</p>
+			<p>https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2017/05/15/20/19/c7_pet_depression-8col.jpg</p>
+			<p>https://qph.fs.quoracdn.net/main-qimg-f01273ebbed23fabc4c4c3130c31383e.webp</p>
+			<p>https://teens.drugabuse.gov/sites/default/files/styles/medium/public/blog/ADHD-Brain.jpg?itok=OwnKm6EX</p>
+			<p>https://s3.amazonaws.com/dsg.files.app.content.prod/gereports/wp-content/uploads/2015/04/26060126/Vizamyl-spotlight.png</p>
+			<p>https://i.redd.it/71imk2vg72c01.jpg</p>
+		</div>
+		<div class="footer">
+			<div id="andoy"><p><font color="#54B948">reee</font>Philippines<font color="#54B948">reee</font>Kahusayan ng Isip at Puso</p></di
+		</div>
+	</body>
+</html>
